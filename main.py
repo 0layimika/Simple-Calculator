@@ -1,3 +1,4 @@
+#define the functions
 def add(a,b):
     result = a+b
     return result
@@ -13,6 +14,7 @@ def divide(a,b):
 def modulus(a,b):
     result = a%b
     return result
+#list out the availabe functions
 print('welcome to this simple calculator')
 print('select number of operation you want to perform')
 print('1.Add')
@@ -22,9 +24,11 @@ print('4.Divide')
 print('5.modulus')
 while True:
     operation = input('what operation number would you like to perform:')
+    #check operation selected by user
     while operation !='1' and operation !='2' and operation !='3' and operation !='4' and operation !='5':
         print('invalid operation selected')
         operation = input('what operation number would you like to perform:')
+        #check that numbers inputed by users are error free
     while True:
         try:
             number1 = int(input('enter first number:'))
